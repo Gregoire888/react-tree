@@ -1,0 +1,55 @@
+.tree-container {
+  text-align: left;
+  padding: 1rem;
+}
+
+.tree-node {
+  margin-bottom: 0.5rem;
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
+
+.tree-node_header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  svg {
+    margin-right: 0.4rem;
+    &:hover {
+      color: #007bff;
+    }
+  }
+
+  .tree-node_name {
+    display: flex;
+    align-items: center;
+
+    svg {
+      color: transparent;
+      margin: 0;
+      padding: 0;
+      margin-left: 0.3rem;
+      width: 1rem;
+    }
+
+    &:hover {
+      text-decoration: underline;
+      svg {
+        color: rgba(255, 255, 255, 0.87);
+      }
+    }
+  }
+}
+
+.tree-node_children-wrapper {
+  padding-left: 0.7rem;
+}
+
+.tree-node_children-container {
+  margin-top: 0.5rem;
+  border-left: dashed 1px #ccc;
+  padding-top: 0.2rem;
+  padding-left: 1.2rem;
+}
